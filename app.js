@@ -1,9 +1,11 @@
 var express = require('express');
 var app = express();
 
-app.get('/user/:name', function (req, res) {
-  res.send(req.params.name);
-});
+// app.get('/user/:name', function (req, res) {
+//   res.send(req.params.name);
+// });
+
+app.use(express.static('public'));
 // app.get('/', function (req, res) {
 //   res.send('this is my first express app!!');
 // });
